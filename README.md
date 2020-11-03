@@ -49,7 +49,7 @@ The Crypto Tracker should update the current price and percentage change in USD 
 * Code design
 * Strategy to refresh data
 * Ability to write clear documentation
-
+* Applying default UI & UX concepts 
 
 ```
 Solutions build with expo.io will be not evaluated. Please use react-cli
