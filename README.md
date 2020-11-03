@@ -16,8 +16,8 @@ Minimum required mobile platforms is Android 10+ & IOS 13+
 You can find bellow a design mockup for the challenge. Feel free to use it or create your own:
 https://www.figma.com/proto/sVfUI6ThTwAbLlhzbWj52Q/Mobile-Challenge-Nov-2019?node-id=1%3A4&scaling=scale-down
 
-For the assets we recommend the material icons:
-https://material.io/resources/icons/?style=baseline
+For the assets we recommend the following react-native-vector-icons library, Choose one of available library from there.
+https://oblador.github.io/react-native-vector-icons/
 
 # Main Features of the app
 
