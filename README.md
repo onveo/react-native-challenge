@@ -2,9 +2,13 @@
 Our React-native coding challenge is a simple "Crypto Tracker". Users should be able to add new cryptocurrencies, visualize the current price and the change in price in % for the last 24 hours, and also be able to remove a cryptocurrency from the "Crypto Tracker". 
 
 ```
-Important: Please make sure you use ReactNative and Redux. 
+Important: Please make sure you use ReactNative and state managements. 
 Check your solution into github with a readme.md file detailing instructions 
 on how to get the app up and running. 
+```
+
+```
+Minimum required mobile platforms is Android 10+ & IOS 13+
 ```
 
 # Suggested design and assets:
@@ -38,11 +42,12 @@ The Crypto Tracker should update the current price and percentage change in USD 
 # Evaluation Criteria
 
 * Understanding of core Javascript concepts
-* Understanding of ReactNative and Redux frameworks
+* Understanding of ReactNative frameworks
 * Code and component reuse/extensibility
 * Code design
 * Strategy to refresh data
 * Ability to write clear documentation
+
 
 ```
 Solutions build with expo.io will be not evaluated. Please use react-cli
