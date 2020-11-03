@@ -30,7 +30,9 @@ Users should also be able to visualize:
 * Change in percentage in USD in the last 24h
 
 ### 3) API to get pricing and percentage change
-Feel free to use the pricing and percentage change provider of your preference. One of the simplest ones that doesn't require registration is Messari. You can find a sample bellow:
+Feel free to use the pricing and percentage change provider of your preference. One of the simplest ones that doesn't require registration is Messari. It provides most of currency short codes such as ETH, BTC. 
+
+You can find a sample bellow:
 https://data.messari.io/api/v1/assets/btc/metrics
 
 ### 4) Remove a cryptocurrency
