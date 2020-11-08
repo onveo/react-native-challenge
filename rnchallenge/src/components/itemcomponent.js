@@ -1,32 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar, Image } from 'react-native'
-import * as All from '../assets/index'
+import { Text, View, Image } from 'react-native'
 
-export const Item = ({ title, symbol, name, percent, price }) => (
-    <View >
-        <View style={{ flexDirection: 'row',  alignItems:'center',margin:10 }}>
-            <Image style={{ height: 40, width: 40 }} source={All[`${symbol}`]} />
-            <View style={{margin:10}}>
-                <Text style={{fontSize:15, fontWeight:'bold'}}>{title}</Text>
+import * as All from '../assets/index'
+import { ItemComponentStyles } from '../styles/componentstyles'
+
+
+export const Item = ({ title, symbol, percent, price }) => (
+    <View style={ItemComponentStyles.maincontainer}>
+        <View style={ItemComponentStyles.container}>
+            <Image style={ItemComponentStyles.image} source={All[`${symbol}`]} />
+            <View style={ItemComponentStyles.titlecontainer}>
+                <Text style={ItemComponentStyles.titletext}>{title}</Text>
                 <Text>{symbol}</Text>
             </View>
-            <Text style={styles.title}>{price}</Text>
-        </View>
-       
-    </View>
-);
+            <View style={ItemComponentStyles.pricecontainer}>
+                <Text style={{ fontSize: 20 }}>${price}</Text>
+                <Text style={{ fontSize: 14 }}>{percent}</Text>
+            </View>
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        marginTop: StatusBar.currentHeight || 0,
-    },
-    item: {
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
-    },
-    title: {
-        fontSize: 32,
-    },
-});
+        </View>
+        <View style={ItemComponentStyles.separator} />
+    </View>
+)

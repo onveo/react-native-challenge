@@ -1,26 +1,31 @@
 import React, { useState } from 'react'
-import { View, Text, TextInput, Dimensions, Button } from 'react-native'
-import CustomButton from '../components/custombutton'
+import { View, Text, TextInput, Dimensions } from 'react-native'
+
+import AddButton from '../components/addbutton'
+import { SearchStyles } from '../styles/searchstyle'
 
 const a = Dimensions.get('window').width
-const b = Dimensions.get('window').height
 
 const Searchscreen = () => {
     const [value, onChangeText] = useState();
-    return (
-        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <Text style={{ marginTop: b / 3, fontSize: 35, margin: 20 }}>
+    return (<>
+        <View style={SearchStyles.container}>
+            <Text style={SearchStyles.text}>
                 Add a Crytocurrency
             </Text>
             <TextInput
-            autoCorrect={false}
+                autoCorrect={false}
                 placeholder='BTC, XRP etc.'
-                style={{ height: 50, borderWidth: 2, borderColor: '#FCD25A', width: a - (a / 5), fontSize: 20 }}
+                style={SearchStyles.textinput}
                 onChangeText={text => onChangeText(text)}
                 value={value}
             />
-            <CustomButton texter={value} />
+
         </View>
+        <View style={{ alignSelf: 'flex-end'}}>
+            <AddButton texter={value} />
+        </View>
+    </>
     )
 }
 
