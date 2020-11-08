@@ -1,3 +1,8 @@
+
+//this is searching button for the coins
+//should be updated
+//carry the textinput to another page
+
 import React, { useState } from 'react'
 import { View, Text, TextInput, Dimensions } from 'react-native'
 
@@ -8,6 +13,7 @@ import BackButton from '../components/backbutton'
 const a = Dimensions.get('window').width
 
 const Searchscreen = () => {
+    //use hooks as much as you can
     const [value, onChangeText] = useState();
     return (<>
         <View style={SearchStyles.container}>

@@ -1,3 +1,9 @@
+
+/*
+    this page is the main page for now. it should be cleared from components as much as possible
+
+*/ 
+
 import React from 'react'
 import { View, Button, FlatList, Dimensions } from 'react-native'
 import { useSelector } from 'react-redux';
@@ -12,6 +18,8 @@ const HomeScreen = ({ navigation }) => {
 
     const coins = useSelector(state => state.coins);
 
+    //we are sending props to ıtem component in forms that we need there
+    //dont change if you dont know what you are doing
     const renderItem = ({ item }) => {
         return <Item title={item.name}
             price={convertToCurrency(item.market_data.price_usd)}
@@ -20,6 +28,7 @@ const HomeScreen = ({ navigation }) => {
     };
 
     return (
+        //we have conditional render here at Flatlist component
         <View style={HomeStyles.container}>
             {coins && <FlatList
                 data={coins}
@@ -38,7 +47,7 @@ const HomeScreen = ({ navigation }) => {
     )
 }
 
-
+//this function prepares prices and percent change of coins to better forms
 const convertToCurrency = (num) => {
     return (num).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }

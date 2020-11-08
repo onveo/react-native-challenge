@@ -32,9 +32,9 @@ export const HomeHeaderStyles = StyleSheet.create({
         left:-(a/10)
     },
     image: {
-        width: 60,
-        height: 60,
-        borderRadius: 30,
+        width: 50,
+        height: 50,
+        borderRadius: 25,
         right:-(a/10)
 
     }

@@ -1,3 +1,8 @@
+//this page is for next versions
+//when app gets bigger you have to use this page for fair coding
+
+
+
 // import HomeStyles from './homestyles'
 // import SearchStyles from './searchstyle'
 // import AddButtonStyles from './componentstyles'

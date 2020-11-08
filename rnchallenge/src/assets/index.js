@@ -1,3 +1,11 @@
+/*
+    This part is for showing images staticly. If we decide to show images more relative
+    in future we can get images from some apis.
+    Here we are exporting image paths to `itemcomponent` to show images responsevly over props from that component.
+
+*/
+
+
 export const BTC = require('./btc.png'); 
 export const XRP = require('./xrp.png'); 
 export const ETH = require('./eth.png'); 

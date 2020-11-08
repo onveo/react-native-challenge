@@ -1,3 +1,6 @@
+
+//this is kind of header button to go back to main(list) page
+
 import React from 'react'
 import { View, Button } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
