@@ -18,10 +18,10 @@ const App = () => {
                     <Stack.Screen name="Home" component={HomeScreen} options={{
                         headerTitle: <HomeHeader />, headerStyle: {
                             backgroundColor: '#375774',
-                            height:140
+                            height: 120
                         }
                     }} />
-                    <Stack.Screen name="Search" component={SearchScreen} />
+                    <Stack.Screen name="Search" component={SearchScreen}  options={{headerShown:false}}/>
                 </Stack.Navigator>
             </NavigationContainer>
         </Provider>

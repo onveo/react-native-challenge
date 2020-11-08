@@ -60,19 +60,20 @@ export const ItemComponentStyles = StyleSheet.create({
     },
     pricecontainer: {
         flexDirection: 'column',
-        right: 0,
+        right: 20,
         alignItems: 'flex-end',
         position: 'absolute'
     },
     image: {
         height: 40,
         width: 40,
-        marginRight: 10
+        marginLeft: 20,
+        marginRight:10
     },
     separator: {
         marginVertical: 8,
-        width: 300,
-        marginHorizontal: 50,
+        width: a-40,
+        marginHorizontal: 20,
         borderBottomColor: '#737373',
         borderBottomWidth: StyleSheet.hairlineWidth
     }
