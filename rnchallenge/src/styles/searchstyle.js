@@ -20,8 +20,8 @@ export const SearchStyles = StyleSheet.create({
         borderColor: 'grey',
         width: a - (a / 5),
         fontSize: 20,
-        borderRadius: 5
-        
+        borderRadius: 5,
+        padding: 10,
     },
     separator: {
 

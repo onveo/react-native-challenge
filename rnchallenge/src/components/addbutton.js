@@ -12,13 +12,13 @@ import { AddButtonStyles } from '../styles/componentstyles'
 const AddButton = (props) => {
     const dispatch = useDispatch();
     LoadCoin = () => {
+        //this function send requests to api then send response to redux state
         //when we decide to add redux-thunk we will take this function to actions
         //we have a responseve path here to search
         fetch(`https://data.messari.io/api/v1/assets/${props.texter}/metrics`, {
             method: 'GET'
 
         })
-
             .then((response) => response.json())
             .then((responseData) => {
 
@@ -30,7 +30,7 @@ const AddButton = (props) => {
                 } else {
                     //handle error
                     //we need to figure out handling errors in better way
-                    console.log("not found")
+                    alert('Please try again!')
                 }
 
             })
@@ -39,7 +39,7 @@ const AddButton = (props) => {
             });
     }
     return (
-        <TouchableOpacity style={AddButtonStyles.container}  onPress={() => LoadCoin(props.texter)}>
+        <TouchableOpacity style={AddButtonStyles.container} onPress={() => LoadCoin(props.texter)}>
             <Text style={AddButtonStyles.text}>Add</Text>
         </TouchableOpacity>
     )

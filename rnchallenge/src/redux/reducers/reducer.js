@@ -1,4 +1,4 @@
-import { ADDCOIN } from '../actiontypes/actionTypes';
+import { ADDCOIN, REMOVECOIN, UPDATECOIN } from '../actiontypes/actionTypes';
 
 const initialState = {
     coins: [],
@@ -17,9 +17,19 @@ export const coinReducer = (state = initialState, action) => {
                 alert('Added, please check the list!')
                 return { coins: [...state.coins, action.payload] };
             }
-     //in future versions we can add remove function, this function is only to try, dont care about it
-        // case REMOVE_COIN: 
-        //    return{coins: state.coins.filter(eachCoin=>eachCoin.id!== action.payload)}
+
+        case REMOVECOIN:
+            return { coins: state.coins.filter(eachCoin => eachCoin.id !== action.payload) }
+
+        case UPDATECOIN:
+            const isCoinUpdated = state.coins.find(eachCoin => eachCoin.id === action.payload.id)
+            if (isCoinUpdated) {
+                const index = state.coins.findIndex((el) => el.id === action.payload.id);
+                state.coins[index] = action.payload
+                return { coins: [...state.coins] };
+            }
+            else return {state}
+
         default:
             return state;
     }

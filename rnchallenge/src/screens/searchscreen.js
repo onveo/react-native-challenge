@@ -19,12 +19,12 @@ const Searchscreen = () => {
         <View style={SearchStyles.container}>
             <BackButton/>
             <Text style={SearchStyles.text}>
-                Add a Crytocurrency
+                Add a Cryptocurrency
             </Text>
             <TextInput
                 autoCorrect={false}
 
-                placeholder='  BTC, XRP etc.'
+                placeholder='BTC, XRP etc.'
                 style={SearchStyles.textinput}
                 onChangeText={text => onChangeText(text)}
                 value={value}

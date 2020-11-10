@@ -42,7 +42,7 @@ export const HomeHeaderStyles = StyleSheet.create({
 export const ItemComponentStyles = StyleSheet.create({
     maincontainer: {
         flexDirection: 'column',
-        width:a
+        // width:a
     },
     container: {
         flexDirection: 'row',
@@ -76,5 +76,13 @@ export const ItemComponentStyles = StyleSheet.create({
         marginHorizontal: 20,
         borderBottomColor: '#737373',
         borderBottomWidth: StyleSheet.hairlineWidth
-    }
+    },
+    deleteBox: {
+        backgroundColor: '#EB5757',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: a/4,
+        height: 70,
+       
+      },
 });
